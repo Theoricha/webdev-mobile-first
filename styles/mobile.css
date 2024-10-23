@@ -14,7 +14,10 @@ footer {
 }
 
 #logo {
-    text-align: center
+  /* text-align: center; */
+  display:flex;
+  justify-content: space-between;
+  padding:5px;
 }
 
 header {
@@ -55,4 +58,31 @@ nav ul li a {
 .resize-img{
   width: 100%;
   height: auto;
+}
+
+.burger > .line{
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+nav{
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+nav {
+/* for burger menu */
+  overflow: auto; 
+}
+
+.videoContainer{
+  display: flex;
+  justify-content: center;
+}
+video{
+  width:100%;
+  height: auto;
+  max-width:560px;
 }
